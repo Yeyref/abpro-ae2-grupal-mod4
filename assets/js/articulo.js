@@ -1,7 +1,8 @@
 export class Articulo {
-    constructor(nombre, precio) {
+    constructor(nombre, precio, cantidad) {
         this.nombre = nombre;
         this.precio = precio;
+        this.cantidad = cantidad;
     }
 
     get nombre() {
@@ -20,4 +21,11 @@ export class Articulo {
         this._precio = value;
     }
 
+    get cantidad() {
+        return this._cantidad;
+    }
+
+    set cantidad(value) {
+        this._cantidad = value;
+    }
 }

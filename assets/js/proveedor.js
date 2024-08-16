@@ -7,7 +7,7 @@ export class Proveedor {
     }
 
     getInfoProveedor() {
-        return `Proveedor: ${this._nombre}, Teléfono: ${this._telefono}, Articulo: ${this.articulo._nombre}`;
+        return `Proveedor: ${this.nombre}, Teléfono: ${this.telefono}, Articulo: ${this.articulo.nombre}`;
     }
 
     get nombre() {
